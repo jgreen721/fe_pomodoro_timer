@@ -11,6 +11,9 @@
   background: var(--dark);
   border-radius: 100px;
   padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   /* border: 2px solid white; */
 }
 
@@ -32,7 +35,7 @@
   position: relative;
   /* border: 2px solid orange; */
   width: max-content;
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0 0.5rem;
   width: 10rem;
   cursor: pointer;
@@ -64,4 +67,17 @@
   top: 0;
   left: 0;
   /* transform: translateX(-10rem); */
+}
+
+@media screen and (max-width: 450px) {
+  .options-row {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  .options-row::after {
+    width: 10rem;
+  }
+  .option-item {
+    width: 7rem;
+  }
 }
