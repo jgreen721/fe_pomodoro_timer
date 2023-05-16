@@ -1,0 +1,46 @@
+.timer-container {
+  height: 41rem;
+  width: 41rem;
+  /* border: 2px solid red; */
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.outside-circle {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%);
+  box-shadow: -50px -50px 100px #272c5a, 50px 50px 100px #121530;
+  padding: 2.5rem;
+}
+
+.timer-circle,
+.display-circle {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  /* background: var(--red); */
+}
+
+.timer-circle {
+  background: conic-gradient(var(--primary) 0 var(--i), var(--dark) var(--i));
+}
+
+.display-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.timer-display {
+  display: flex;
+}
+
+.action-btn {
+  color: var(--primary);
+  background: transparent;
+  text-transform: uppercase;
+}

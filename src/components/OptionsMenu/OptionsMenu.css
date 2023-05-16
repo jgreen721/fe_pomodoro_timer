@@ -1,0 +1,131 @@
+.options-menu {
+  transition: 0.5s ease;
+  position: absolute;
+  bottom: 25%;
+  background: var(--white);
+  border-radius: 15px;
+  padding: 0rem 4rem;
+  color: var(--dark);
+}
+
+.options-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9rem;
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+}
+
+.close-icon {
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.close-icon:hover {
+  transform: scale(1.5) rotate(15deg);
+}
+
+.top-menu-row {
+  padding: 3rem 0;
+}
+
+.top-menu-row,
+.time-options-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.time-options-section {
+  text-align: start;
+  padding: 1.5rem 0;
+}
+
+.time-input-div {
+  width: 14rem;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  justify-content: space-between;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.time-option-label {
+  padding: 1rem 0rem;
+}
+
+.arrow-btn {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.hide-menu {
+  transform: translateX(150vw);
+}
+
+.menu-options-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 0;
+}
+
+.border-y {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.options-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.option-btn {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.option-btn:hover {
+  transform: scale(1.1);
+}
+
+.apply-btn {
+  background: var(--primary);
+  transform: translateY(50%);
+}
+
+.apply-btn:hover {
+  box-shadow: 2px 3px 15px var(--primary);
+  transform: translateY(50%) scale(1.2, 1);
+}
+
+@media screen and (max-width: 450px) {
+  .options-menu {
+    bottom: 10%;
+  }
+  .time-options-row,
+  .menu-options-row {
+    flex-direction: column;
+  }
+
+  .time-option-div {
+    display: flex;
+    padding: 1rem 0;
+    gap: 5rem;
+  }
+
+  .menu-options-row h4 {
+    padding: 1.5rem 0;
+  }
+}
